@@ -1,0 +1,14 @@
+.zag{
+    color: #fd496c;
+    font-weight: bold;
+    padding: 5px;
+}
+.photo{
+    padding: 10px;
+    border-radius: 17px;
+
+}
+
+.photo:hover{
+    filter: invert(85%);
+}

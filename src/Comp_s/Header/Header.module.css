@@ -1,0 +1,9 @@
+.head{
+    grid-area: h;
+    background-color: #2b2b2b;
+}
+.zag{
+    color: #fd496c;
+    text-align: center;
+    margin-top: 15px;
+}

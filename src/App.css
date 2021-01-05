@@ -1,0 +1,21 @@
+.app {
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "n c";
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 17% 1fr ;
+    grid-gap: 0.6vw;
+    height: 95vh;
+    /*width: 1200px;*/
+    margin: 0 auto;
+}
+.app-content{
+    grid-area: c;
+}
+
+h4{
+    color: #fd496c;
+    margin: 0;
+    padding: 5px;
+}
