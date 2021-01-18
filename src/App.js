@@ -1,4 +1,5 @@
 import React from 'react'
+import BIRDS from 'vanta/dist/vanta.birds.min'
 import './App.css'
 import {Route} from 'react-router-dom'
 import Header from "./Comp_s/Header/Header"

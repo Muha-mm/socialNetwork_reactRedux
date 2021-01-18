@@ -3,19 +3,14 @@
     grid-template-areas:
     "h h"
     "n c";
-    grid-template-rows: 10% 1fr;
-    grid-template-columns: 17% 1fr ;
+    grid-template-rows: 7% 1fr;
+    grid-template-columns: 20% 1fr;
     grid-gap: 0.6vw;
-    height: 95vh;
-    /*width: 1200px;*/
-    margin: 0 auto;
-}
-.app-content{
-    grid-area: c;
+    height: 150vh;
+    margin-left: 90px;
+    width: 950px;
 }
 
-h4{
-    color: #fd496c;
-    margin: 0;
-    padding: 5px;
+.app-content{
+    grid-area: c;
 }

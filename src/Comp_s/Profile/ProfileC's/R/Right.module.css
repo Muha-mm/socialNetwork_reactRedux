@@ -1,0 +1,5 @@
+.right{
+  grid-area: r;
+  margin-top: 27px;
+  display: block;
+}

@@ -1,0 +1,16 @@
+.friends{
+    margin-top: 21.5px;
+    height: 161px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #151515;
+    padding: 14px 0 17px 17px;
+    background: #212121;
+    width: 180px;
+}
+
+
+.friendsCount{
+    color: #c4c4c4;
+    font-size: 15px;
+    margin-left: 4px;
+}

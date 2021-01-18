@@ -1,12 +1,12 @@
 import React from 'react'
 import c from './Profile.module.css'
-import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import Posts from "./Posts/Posts";
+import Left from "./ProfileC's/L/Left";
+import Right from "./ProfileC\'s/R/Right";
 const Profile = () =>{
     return (
         <div className={c.profile}>
-            <ProfileInfo/>
-            <Posts/>
+            <Left/>
+            <Right/>
         </div>
     )}
 export default Profile

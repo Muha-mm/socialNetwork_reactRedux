@@ -1,0 +1,29 @@
+.rightCount{
+    float: right;
+    width: 85px;
+    height: 404px;
+    word-wrap:break-word;
+    background: #212121;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #151515, 1px 1px 3px #151515;
+    margin-right: 17px;
+}
+
+.item{
+    height: 70px;
+    width: 80px;
+    padding: 6px 0 0 0;
+    margin: 16px 0 24px 2px;
+}
+
+.count{
+    color: #a0a0a0;
+    font-size: 33px;
+    text-align: center;
+}
+
+.itemCount{
+    color: #787373;
+    font-size: 14px;
+    text-align: center;
+}

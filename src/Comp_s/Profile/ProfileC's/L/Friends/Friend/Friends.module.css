@@ -1,0 +1,19 @@
+.friend{
+    display: inline-block;
+    margin-top: 1px;
+}
+.item{
+    margin: 8px 9px 12px 0;
+    background-color: #c4c4c4;
+    width: 47px;
+    height: 47px;
+    border-radius: 100px;
+    float: left;
+}
+
+.name{
+    font-size: 10px;
+    margin-top: 51px;
+    text-align: center;
+    color: #c4c4c4;
+}

@@ -1,9 +1,13 @@
 import React from 'react'
 import c from './Posts.module.css'
+import Post from "./Post/Post";
 const Posts = () =>{
     return (
     <div className={c.posts}>
-            <h4>MyPosts</h4>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
     </div>
 )}
 export default Posts

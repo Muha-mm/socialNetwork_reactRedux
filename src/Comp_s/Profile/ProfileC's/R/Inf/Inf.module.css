@@ -1,0 +1,60 @@
+.inf{
+    background: #212121;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #151515, 0px 0px 3px #151515;
+    padding: 10px 10px 20px 17px;
+    width: 460px;
+    word-wrap:break-word;
+
+}
+
+.name{
+    color: #c4c4c4;
+    font-size: 40px;
+}
+
+.mainInf{
+    margin-top: 25px;
+}
+
+.item{
+    margin-top: 12px;
+}
+
+.key{
+    color: #787373;
+}
+
+.value, .item a{
+    color: #c4c4c4;
+}
+
+
+.fullInfButton{
+    font-family: 'Times New Roman', serif ;
+    width: 200px;
+    margin-top: 5px;
+    height: 22px;
+    border-radius: 7px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    outline: none;
+    color: #c4c4c4;
+    border: 1px outset #2f2f2f;
+    margin-left: 130px;
+    background: #2a2a2a center;
+    transition: background 0.5s;
+}
+
+.fullInfButton:hover {
+    background: #222222 radial-gradient(circle, transparent 1%, #222222 1%) center/15000%;
+}
+.fullInfButton:active {
+    background-color: #353535;
+    background-size: 100%;
+    transition: background 0s;
+}
+.fullInf{
+    margin-top: 17px;
+}

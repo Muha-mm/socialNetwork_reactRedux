@@ -5,13 +5,12 @@
     grid-template-columns: 2fr 6fr;
     grid-gap: 0.1vw;
     height: 100%;
+    width: 800px;
 }
 
 .dialogs_item{
     grid-area: d;
     background-color: #282828;
-    color: #fd496c;
-    font-weight: bold;
 }
 
 .messages{
