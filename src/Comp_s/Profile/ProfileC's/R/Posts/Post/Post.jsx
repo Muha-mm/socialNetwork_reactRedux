@@ -4,15 +4,15 @@ const Post = () =>{
     return (
     <div className={c.post}>
         <div className={c.header}>
-            <div className={c.avaName}>
-                <a href={'#'} className={c.ava}>
-                    <img src={'https://i.pinimg.com/originals/b7/cd/b2/b7cdb2dd27fd48cde91f48e25317288f.jpg'} alt=""/>
-                </a>
-                <div className={c.name}>
-                    <a href="#">Leah Riggeti</a>
-                </div>
+            <a href={'#'} className={c.ava}>
+                <img src={'https://i.pinimg.com/originals/b7/cd/b2/b7cdb2dd27fd48cde91f48e25317288f.jpg'} alt=""/>
+            </a>
+            <div className={c.name}>
+                <a href="#">Leah Riggeti</a>
             </div>
-            <div className={c.date}>18.01.21</div>
+            <div
+                className={c.date}>18.01.21
+            </div>
         </div>
 
         <div className={c.contentPost}>
@@ -22,9 +22,10 @@ const Post = () =>{
             </div>
         </div>
 
-        <hr/>
 
         <div className={c.footer}>
+            <hr/>
+
             <div className={c.like}></div>
         </div>
     </div>

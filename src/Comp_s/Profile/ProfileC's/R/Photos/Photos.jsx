@@ -21,6 +21,7 @@ const Photos = () =>{
             <a className={c.photo}>
                 <img src={photo3} className={c.photo3} alt=""/>
             </a>
+
         </div>
 
 

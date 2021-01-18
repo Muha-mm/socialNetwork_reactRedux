@@ -1,7 +1,7 @@
 .inf{
     background: #212121;
     border-radius: 7px;
-    box-shadow: 1px 1px 3px #151515, 0px 0px 3px #151515;
+    box-shadow: 1px 1px 3px #151515, 0 0 3px #151515;
     padding: 10px 10px 20px 17px;
     width: 460px;
     word-wrap:break-word;
