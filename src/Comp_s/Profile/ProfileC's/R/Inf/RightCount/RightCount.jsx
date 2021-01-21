@@ -29,7 +29,7 @@ let RightCount =()=>{
 
             <div href={'#'} className={c.item}>
                 <a href="">
-                    <div className={c.count}><span>4</span></div>
+                    <div className={c.count}><span>148k</span></div>
                     <div className={c.itemCount}>подписчика</div>
                 </a>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import BIRDS from 'vanta/dist/vanta.birds.min'
 import './App.css'
 import {Route} from 'react-router-dom'
 import Header from "./Comp_s/Header/Header"
@@ -9,10 +8,13 @@ import Music from "./Comp_s/Profile/Music/Music";
 import News from "./Comp_s/Profile/News/News";
 import Settings from "./Comp_s/Profile/Setings/Settings";
 import Dialogs from "./Comp_s/Profile/Dialogs/Dialogs";
+import Sticky from "react-stickynode";
 const App = () => {
   return (
     <div className="app">
-        <Header/>
+        {/*<Sticky>*/}
+            <Header/>
+        {/*</Sticky>*/}
         <Nav/>
         <div className='app-content'>
             <Route exact path = {["/Profile", "/"]} component={Profile}/>

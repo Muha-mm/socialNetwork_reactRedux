@@ -1,11 +1,13 @@
 import React from 'react'
 import c from './Post.module.css'
+import ava from './avaHUB.jpg'
+
 const Post = () =>{
     return (
     <div className={c.post}>
         <div className={c.header}>
             <a href={'#'} className={c.ava}>
-                <img src={'https://i.pinimg.com/originals/b7/cd/b2/b7cdb2dd27fd48cde91f48e25317288f.jpg'} alt=""/>
+                <img src={ava} alt=""/>
             </a>
             <div className={c.name}>
                 <a href="#">Leah Riggeti</a>
@@ -25,8 +27,7 @@ const Post = () =>{
 
         <div className={c.footer}>
             <hr/>
-
-            <div className={c.like}></div>
+            {/*<div className={c.postFooter}></div>*/}
         </div>
     </div>
 )}

@@ -1,7 +1,7 @@
 .post{
     margin-top: 25px;
     float: left;
-    width: 538px;
+    width: 585px;
     height: 100%;
     background: #292929;
     border-radius: 7px;
@@ -52,8 +52,6 @@ hr{
     height: 0px;
     border: none;
     border-top: 1px solid #2b585f;
-    /*margin-left: 10px;*/
-    /*margin-top: 10px;*/
 }
 
 .footer{
@@ -62,6 +60,9 @@ hr{
     height: 30px;
     border-radius: 0 0 7px 7px;
     /*padding: 10px;*/
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
+.like{
+
+}

@@ -7,9 +7,9 @@ const Left = () =>{
     return (
     <div className={c.left}>
         <Ava/>
-        <Sticky>
+        {/*<Sticky top={60}>*/}
             <Friends/>
-        </Sticky>
+        {/*</Sticky>*/}
     </div>
 )}
 export default Left

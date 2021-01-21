@@ -8,6 +8,7 @@ const Posts = () =>{
         <Post/>
         <Post/>
         <Post/>
+        <Post/>
     </div>
 )}
 export default Posts
