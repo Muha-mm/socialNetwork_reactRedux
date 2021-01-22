@@ -1,7 +1,7 @@
 import React from 'react'
-import c from './Dialogs_item.module.css'
+import c from './Dialog_item.module.css'
 import {NavLink} from "react-router-dom";
-const Dialogs_item = () =>{
+const Dialog_item = () =>{
     return(
         <div className={c.dialogs_item}>
             <div className={c.items}>
@@ -26,4 +26,4 @@ const Dialogs_item = () =>{
         </div>
     )
 }
-export default Dialogs_item
+export default Dialog_item

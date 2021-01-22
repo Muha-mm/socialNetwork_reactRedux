@@ -1,0 +1,19 @@
+.message{
+    background: #161616;
+    height: 100%;
+}
+.message_1{
+    color: #c4c4c4;
+    font-size: 14px;
+    float: bottom;
+}
+
+.header{
+    background: #282828;
+    height: 35px;
+}
+ .name{
+     text-align: center;
+     color: #c4c4c4;
+     padding-top: 10px;
+ }
