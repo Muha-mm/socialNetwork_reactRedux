@@ -1,14 +1,13 @@
 import React from 'react'
 import c from './Footer.module.css'
-import {rerenderApp} from "../../../../../index";
 const Footer = (props) =>{
     let messageText = React.createRef()
     let addMessage = () =>{
-        let newMessageText = messageText.current.value;
-        props.addMessage(newMessageText);
-        rerenderApp()
-        messageText.current.focus()
-        messageText.current.value = '';
+        props.addMessage(messageText.current.value);
+    }
+
+    let change = () =>{
+        props.changeMessageText(messageText.current.value)
     }
 
     return (
@@ -18,6 +17,8 @@ const Footer = (props) =>{
                 <div className={c.d1}>
                     <form>
                         <textarea
+                            onChange={change}
+                            value={props.newMessageText}
                             ref={messageText}
                             required
                             className={c.vvod}

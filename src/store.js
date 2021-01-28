@@ -5,6 +5,7 @@ let store = {
     _state:{
 
         dialogsPage:{
+            newMessageText:'',
 
             D:[
                 {name:'Patriсk', img:'', id:1},
@@ -117,14 +118,20 @@ export let addMessage = (newMessageText) =>{
     if(newMessageText===''){alert('пусто')}
     else {
         store._state.dialogsPage.M.push(newMessage);
+        store._state.dialogsPage.newMessageText = ''
         rerenderApp()
         }
 }
 
-export let change = (text) =>{
+export let changePostText = (text) =>{
     store._state.profilePage.right.newPostText = text
     rerenderApp();
 }
+export let changeMessageText = (text) =>{
+    store._state.dialogsPage.newMessageText = text
+    rerenderApp();
+}
+
 
 
 export default store;

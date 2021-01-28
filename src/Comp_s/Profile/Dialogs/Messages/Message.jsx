@@ -9,7 +9,10 @@ const Message = (props) =>{
         <div className={c.message}>
             <Header/>
             <Content message = {props.message}/>
-            <Footer addMessage = {props.addMessage}/>                        {/*messageInput*/}
+            <Footer addMessage = {props.addMessage}
+                    changeMessageText = {props.changeMessageText}
+                    newMessageText = {props.newMessageText}
+            />                        {/*messageInput*/}
 
         </div>
     )}

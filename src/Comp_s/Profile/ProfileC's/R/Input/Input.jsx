@@ -9,8 +9,8 @@ const Input = (props) =>{
         props.addPost(newPostRef.current.value);
     }
 
-    let change = () =>{
-        props.change(newPostRef.current.value);
+    let changePostText = () =>{
+        props.changePostText(newPostRef.current.value);
     }
 
     return (
@@ -19,7 +19,7 @@ const Input = (props) =>{
             <form>
                 <textarea
                     ref={newPostRef}
-                    onChange={change}
+                    onChange={changePostText}
                     value={props.right.newPostText}
                     required
                     className={c.vvod}
