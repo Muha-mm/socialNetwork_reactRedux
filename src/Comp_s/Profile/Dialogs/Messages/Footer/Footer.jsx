@@ -1,16 +1,36 @@
 import React from 'react'
-import c from './Message.module.css'
-const Message = () =>{
+import c from './Footer.module.css'
+import {rerenderApp} from "../../../../../index";
+const Footer = (props) =>{
+    let messageText = React.createRef()
+    let addMessage = () =>{
+        let newMessageText = messageText.current.value;
+        props.addMessage(newMessageText);
+        rerenderApp()
+        messageText.current.focus()
+        messageText.current.value = '';
+    }
+
     return (
-        <div className={c.message}>
-            <header className={c.header}>
-                <div className={c.name}>
-                    Patrik
+        <div className={c.footer}>
+            <hr/>
+            <div className={c.input}>
+                <div className={c.d1}>
+                    <form>
+                        <textarea
+                            ref={messageText}
+                            required
+                            className={c.vvod}
+                            placeholder="enter message..." />
+                        <button
+                            onClick={addMessage}
+                            type="button"
+                            className={c.add}>
+                            {'>'}
+                        </button>
+                    </form>
                 </div>
-            </header>
-            <div className={c.message_1}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt fringilla elementum.
             </div>
         </div>
     )}
-export default Message
+export default Footer

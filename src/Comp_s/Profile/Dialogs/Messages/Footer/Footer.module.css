@@ -1,19 +1,75 @@
-.message{
-    background: #161616;
-    height: 100%;
-}
-.message_1{
-    color: #c4c4c4;
-    font-size: 14px;
-    float: bottom;
+.input{
+    width: 100%;
+    /*margin-top: 2px;*/
+    /*position: fixed;*/
 }
 
-.header{
-    background: #282828;
-    height: 35px;
+.footer hr{
+    margin: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333333;
 }
- .name{
-     text-align: center;
-     color: #c4c4c4;
-     padding-top: 10px;
- }
+
+
+.footer{
+    /*height: 49px;*/
+    /*background: #db6161;*/
+    position: relative;
+}
+.d1 textarea {
+    padding: 13px 10px 2px 10px;
+    font-family:'Times New Roman', Times, serif ;
+    width: 604px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: #262626;
+    color: #bebebe;
+    resize: none;
+}
+
+.d1 textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    padding-top: -1px;
+    color: #696969;
+}
+
+.d1 button {
+    font-family: Broadway, serif;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: -232px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    /*box-shadow: 0 1px 2px #151515;*/
+    background: #262626;
+    outline: none;
+    color: #41c1aa;
+    /*border-radius: 0 5px 5px 0;*/
+    cursor: pointer;
+}
+.d1 button:before {
+    font-size: 20px;
+    color: #3b3b3b;
+}
+.d1 button:active{
+    font-size: 15px;
+}
+
+.add {
+    background-position: center;
+    transition: background 0.3s;
+}
+.add:hover {
+    background: #292929 radial-gradient(circle, transparent 1%, #292929 1%) center/15000%;
+}
+.add:active {
+    background-color: #32cda4;
+    background-size: 100%;
+    transition: background 0s;
+}
+

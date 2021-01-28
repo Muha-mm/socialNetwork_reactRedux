@@ -1,16 +1,11 @@
 import React from 'react'
-import c from './Dialog.module.css'
-import DialogItem from "./DialogItem/DialogItem";
-const Dialog = () =>{
+import c from './Search.module.css'
+const Search = () =>{
     return(
-        <div className={c.dialog}>
+        <div className={c.search}>
             <input type="text" placeholder={'поиск'}/>
-            <DialogItem/>
-            <DialogItem/>
-            <DialogItem/>
-            <DialogItem/>
-            <DialogItem/>
+            <hr/>
         </div>
     )
 }
-export default Dialog
+export default Search

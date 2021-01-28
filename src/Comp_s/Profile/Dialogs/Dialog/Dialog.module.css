@@ -1,29 +1,12 @@
-.active{
-    color: rgb(71, 71, 71);
+.dialog{
+    grid-area: d;
+    background-color: #282828;
+    /*height: 90vh;*/
+    height: 583px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.dialog::-webkit-scrollbar {
+    width: 0;
 }
 
-.item a{
-    text-decoration: none;
-    color: #c4c4c4;
-}
-
-.item .active{
-    color: rgb(96, 96, 96);
-}
-
-.items{
-    margin-top: 10px;    
-}
-
-.item{
-    text-align: left;
-    transition: 0.4s;
-    padding: 5px 1px 7px 8px;
-    margin: 4px 5px 2px 5px;
-
-}
-
-.item:hover{
-    background: rgb(43, 43, 43);
-    border-radius: 5px;
-}

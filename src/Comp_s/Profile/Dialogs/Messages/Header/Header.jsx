@@ -1,9 +1,12 @@
 import React from 'react'
-import c from './Footer.module.css'
-const Footer = () =>{
+import c from './Header.module.css'
+const Header = () =>{
     return (
-        <div className={c.footer}>
-
-        </div>
+        <header className={c.header}>
+            <div className={c.name}>
+                Patrick
+            </div>
+            <hr/>
+        </header>
     )}
-export default Footer
+export default Header

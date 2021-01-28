@@ -1,16 +1,15 @@
 import React from 'react'
-import c from './Message.module.css'
-const Message = () =>{
+import c from './Content.module.css'
+import MessageComp from "./MessageComp/MessageComp";
+
+const Content = (props) =>{
+    let messageElements = props.message
+        .map((m) => <MessageComp message = {m.message} time = {m.time}/>)
+
     return (
-        <div className={c.message}>
-            <header className={c.header}>
-                <div className={c.name}>
-                    Patrik
-                </div>
-            </header>
-            <div className={c.message_1}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt fringilla elementum.
-            </div>
+        <div className={c.content}>
+            {messageElements}
         </div>
-    )}
-export default Message
+    )
+}
+export default Content

@@ -1,5 +1,4 @@
-.message_1{
-    color: #c4c4c4;
-    margin: 8px;
-    font-size: 14px;
+.message {
+    height: 583px;
+    grid-area: m;
 }

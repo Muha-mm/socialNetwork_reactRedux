@@ -1,13 +1,19 @@
 .app {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:90px;
+    margin:0 auto;
     display: grid;
     grid-template-areas:
     "h h"
     "n c";
-    grid-template-rows: 7% 1fr;
-    grid-template-columns: 20% 1fr;
+    grid-template-rows: 6% 1fr;
+    grid-template-columns: 18% 1fr;
     grid-gap: 0.6vw;
-    height: 150vh;
-    margin-left: 90px;
+    /*height: 98vh;*/
+    height: 635px;
     width: 950px;
 }
 

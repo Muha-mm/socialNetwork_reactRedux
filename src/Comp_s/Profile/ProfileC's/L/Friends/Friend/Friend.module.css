@@ -11,15 +11,14 @@
     float: left;
 }
 
-.name{
-    font-size: 10px;
-    text-align: center;
-    color: #c4c4c4;
-}
-
 .ava img{
     border-radius: 100px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.name{
+    font-size: 10px;
+    text-align: center;
+    color: #c4c4c4;
 }

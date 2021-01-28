@@ -1,29 +1,18 @@
 import React from 'react'
-import c from './Dialog_item.module.css'
-import {NavLink} from "react-router-dom";
-const Dialog_item = () =>{
+import c from './Dialog.module.css'
+import DialogItem from "./DialogItem/DialogItem";
+import Search from "./Search/Search";
+const Dialog = (props) =>{
+
+    let dialogElements = props.dialog
+        .map( (d) => <DialogItem name = {d.name} id = {d.id}/>)
+
+
     return(
-        <div className={c.dialogs_item}>
-            <div className={c.items}>
-                <div className={c.item}>
-                    <NavLink to = '/Dialogs/1' activeClassName={c.active}>Innokent</NavLink>
-                </div>
-
-                <div className={c.item}>
-                    <NavLink to = '/Dialogs/2' activeClassName={c.active}>Patriki</NavLink>
-                </div>
-
-                <div className={c.item}>
-                    <NavLink to = '/Dialogs/3' activeClassName={c.active}>Kantogor-Egor</NavLink>
-                </div>
-
-                <div className={c.item}>
-                    <NavLink to = '/Dialogs/4' activeClassName={c.active}>Kareliy</NavLink>
-                </div>
-            </div>
-
-
+        <div className={c.dialog}>
+            <Search/>
+            {dialogElements}
         </div>
     )
 }
-export default Dialog_item
+export default Dialog

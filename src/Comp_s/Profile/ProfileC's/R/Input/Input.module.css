@@ -33,7 +33,7 @@ form {
 }
 
 
-::-webkit-input-placeholder {
+.d1 textarea::-webkit-input-placeholder {
   font-size: 13px;
   padding-top: 2px;
   animation-name: texta;

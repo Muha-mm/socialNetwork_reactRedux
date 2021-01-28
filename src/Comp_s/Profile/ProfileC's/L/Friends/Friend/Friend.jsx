@@ -1,12 +1,11 @@
 import React from 'react'
-import c from './Friends.module.css'
-import panda from './avaFri.jpg'
-const Friend = () =>{
+import c from './Friend.module.css'
+const Friend = (props) =>{
     return (
         <div className={c.friend}>
             <a href={'#'} className={c.ava}>
-                <img src={panda} alt=""/>
-                <div className={c.name}>Rachel</div>
+                <img src='https://clck.ru/Stb3z' alt=""/>
+                <div className={c.name}>{props.name}</div>
             </a>
         </div>
     )}

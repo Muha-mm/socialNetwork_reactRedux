@@ -9,7 +9,7 @@ import News from "./Comp_s/Profile/News/News";
 import Settings from "./Comp_s/Profile/Setings/Settings";
 import Dialogs from "./Comp_s/Profile/Dialogs/Dialogs";
 import Sticky from "react-stickynode";
-const App = () => {
+const App = (props) => {
   return (
     <div className="app">
         {/*<Sticky>*/}
@@ -17,8 +17,16 @@ const App = () => {
         {/*</Sticky>*/}
         <Nav/>
         <div className='app-content'>
-            <Route exact path = {["/Profile", "/"]} component={Profile}/>
-            <Route path = '/Dialogs' component={Dialogs}/>
+            <Route exact path = {["/Profile", "/"]}
+                render = {() => <Profile
+                    profilePage = {props.state.profilePage}
+                    addPost = {props.addPost}
+                    change = {props.change}/> }/>
+
+            <Route path = '/Dialogs'
+                   render = {() => <Dialogs
+                       dialogsPage = {props.state.dialogsPage}
+                       addMessage = {props.addMessage}/> }/>
             <Route path = '/Music' component={Music}/>
             <Route path = '/News' component={News}/>
             <Route path = '/Settings' component={Settings}/>

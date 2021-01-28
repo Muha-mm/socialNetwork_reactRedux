@@ -1,15 +1,12 @@
 import React from 'react'
 import c from './Left.module.css'
-import Sticky from 'react-stickynode';
 import Ava from "./Ava/Ava";
 import Friends from "./Friends/Friends";
-const Left = () =>{
+const Left = (props) =>{
     return (
     <div className={c.left}>
         <Ava/>
-        {/*<Sticky top={60}>*/}
-            <Friends/>
-        {/*</Sticky>*/}
+        <Friends sixFriends = {props.left.sixFriends}/>
     </div>
 )}
 export default Left

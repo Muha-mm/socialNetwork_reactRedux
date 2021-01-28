@@ -1,8 +1,5 @@
 import React from 'react'
 import c from './Photos.module.css'
-import photo1 from './3photo/soska3.jpg'
-import photo2 from './3photo/soska4.jpg'
-import photo3 from './3photo/soska5.jpg'
 const Photos = () =>{
     return (
     <div className={c.photos}>
@@ -13,17 +10,15 @@ const Photos = () =>{
 
         <div className={c.allPhoto}>
             <a className={c.photo}>
-                <img src={photo1} alt=""/>
+                <img src='https://i.pinimg.com/400x300/74/b6/a8/74b6a8af0e3cfdba9d36f181a6148822.jpg' alt=""/>
             </a>
             <a className={c.photo}>
-                <img src={photo2} className={c.photo2} alt=""/>
+                <img src='https://i1.sndcdn.com/avatars-000037729329-t5vvr0-t500x500.jpg' className={c.photo2} alt=""/>
             </a>
             <a className={c.photo}>
-                <img src={photo3} className={c.photo3} alt=""/>
+                <img src='https://i.pinimg.com/originals/98/0b/77/980b776db433e0f7b9b009b27163f26d.jpg' className={c.photo3} alt=""/>
             </a>
-
         </div>
-
 
     </div>
 )}

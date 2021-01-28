@@ -1,19 +1,12 @@
 import React from 'react'
 import c from './Dialogs.module.css'
 import Message from "./Messages/Message";
-import Dialogs_item from "./Dialogs_item/Dialogs_item";
-const Dialogs = () =>{
+import Dialog from "./Dialog/Dialog";
+const Dialogs = (props) =>{
     return (
     <div className={c.dialogs}>
-
-        <div className={c.dialogs_item}>
-            <Dialogs_item/>
-        </div>
-
-        <div className={c.messages}>
-            <Message/>
-        </div>
-
+            <Dialog dialog = {props.dialogsPage.D}/>
+            <Message message = {props.dialogsPage.M} addMessage={props.addMessage}/>
     </div>
 )}
 export default Dialogs
