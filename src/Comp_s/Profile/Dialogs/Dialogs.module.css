@@ -1,9 +1,10 @@
 .dialogs{
+    position: relative;
+    right: 24px;
     display: grid;
     grid-template-areas:
             'd m';
     grid-template-columns: 2fr 6fr;
     grid-gap: 0.3vw;
-    /*height: 100%;*/
     width: 900px;
 }

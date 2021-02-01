@@ -8,26 +8,26 @@ import Music from "./Comp_s/Profile/Music/Music";
 import News from "./Comp_s/Profile/News/News";
 import Settings from "./Comp_s/Profile/Setings/Settings";
 import Dialogs from "./Comp_s/Profile/Dialogs/Dialogs";
-import Sticky from "react-stickynode";
 const App = (props) => {
   return (
     <div className="app">
-        {/*<Sticky>*/}
-            <Header/>
-        {/*</Sticky>*/}
+        <Header/>
         <Nav/>
         <div className='app-content'>
             <Route exact path = {["/Profile", "/"]}
-                render = {() => <Profile
+                render = {() =>
+                <Profile
+                    dispatch = {props.dispatch}
                     profilePage = {props.state.profilePage}
-                    addPost = {props.addPost}
-                    changePostText = {props.changePostText}/> }/>
+                />}/>
 
             <Route path = '/Dialogs'
-                   render = {() => <Dialogs
+                   render = {() =>
+                   <Dialogs
+                       dispatch = {props.dispatch.bind()}
                        dialogsPage = {props.state.dialogsPage}
-                       addMessage = {props.addMessage}
-                       changeMessageText = {props.changeMessageText}/> }/>
+                   />}/>
+
             <Route path = '/Music' component={Music}/>
             <Route path = '/News' component={News}/>
             <Route path = '/Settings' component={Settings}/>

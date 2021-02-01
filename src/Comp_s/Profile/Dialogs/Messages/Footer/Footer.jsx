@@ -1,13 +1,25 @@
 import React from 'react'
 import c from './Footer.module.css'
-const Footer = (props) =>{
-    let messageText = React.createRef()
-    let addMessage = () =>{
-        props.addMessage(messageText.current.value);
-    }
+import {changeMessageTextActionCreator, sendMessageActionCreator}
+            from "../../../../../Redux/Reducer/dialogsPageReducer";
 
-    let change = () =>{
-        props.changeMessageText(messageText.current.value)
+const Footer = (props) =>{
+    //actionCreators
+
+
+    let sendMessage = () =>{
+        props.dispatch(sendMessageActionCreator());
+    };
+    let change = (e) =>{
+        props.dispatch(changeMessageTextActionCreator(e.target.value))
+    };
+
+    let _handleKeyDown = (e) => {
+        if (e.key === 'Enter' && e.shiftKey) {}
+        else if (e.keyCode === 13) {
+            sendMessage();
+            e.preventDefault()
+        }
     }
 
     return (
@@ -17,14 +29,13 @@ const Footer = (props) =>{
                 <div className={c.d1}>
                     <form>
                         <textarea
+                            onKeyDown={_handleKeyDown}
                             onChange={change}
                             value={props.newMessageText}
-                            ref={messageText}
                             required
-                            className={c.vvod}
                             placeholder="enter message..." />
                         <button
-                            onClick={addMessage}
+                            onClick={sendMessage}
                             type="button"
                             className={c.add}>
                             {'>'}

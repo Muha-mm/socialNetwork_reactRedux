@@ -4,24 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
-import store, {addPost, addMessage, changePostText,changeMessageText} from "./store";
+import store from "./Redux/store";
 
 
-export let rerenderApp = () => {
+export let rerenderApp = (state) => {
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App state={store._state}
-                 addPost = {addPost}
-                 addMessage = {addMessage}
-                 changePostText = {changePostText}
-                 changeMessageText = {changeMessageText}/>
+            <App state={state} dispatch = {store.dispatch.bind(store)}/>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 )};
 
-rerenderApp();
+rerenderApp(store.getState());
+store.subscribe(rerenderApp);
 
 
 

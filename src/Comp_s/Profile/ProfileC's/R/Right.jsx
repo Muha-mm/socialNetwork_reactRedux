@@ -11,7 +11,7 @@ const Right = (props) =>{
         <RightCount/>
         <Inf/>
         <Photos/>
-        <Input right = {props.right} addPost={props.addPost} changePostText = {props.changePostText}/>
+        <Input dispatch = {props.dispatch} right = {props.right}/>
         <Posts postData = {props.right.postData}/>
     </div>
 )}

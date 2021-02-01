@@ -12,16 +12,17 @@
     box-shadow: 1px 1px 3px #151515, 0 0 2px #151515;
     padding: 10px 3px 10px 10px;
     border-radius: 20px;
-    background-color: #8d3529;
+    background-color: #3b3b3b;
     max-width: 400px;
     float: left;
 
 }
 
 .time{
+    font-weight: bold;
     float: right;
     margin: 6px 3px 0 6px;
     font-size: 8px;
-    color: #a57474;
+    color: #42b59a;
     width: 21px;
 }

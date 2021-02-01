@@ -7,10 +7,10 @@ const Dialogs = (props) =>{
     <div className={c.dialogs}>
             <Dialog dialog = {props.dialogsPage.D}/>
             <Message
+                dispatch = {props.dispatch}
                 newMessageText = {props.dialogsPage.newMessageText}
                 message = {props.dialogsPage.M}
-                addMessage={props.addMessage}
-                changeMessageText = {props.changeMessageText}/>
+            />
     </div>
 )}
 export default Dialogs
