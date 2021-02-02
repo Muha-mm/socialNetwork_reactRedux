@@ -1,5 +1,4 @@
 import React from 'react'
-import { defaultProps } from 'react-stickynode'
 import c from './Post.module.css'
 
 const Post = (props) =>{

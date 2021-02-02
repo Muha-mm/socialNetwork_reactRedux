@@ -6,7 +6,7 @@ const Profile = (props) =>{
     return (
         <div className={c.profile}>
             <Left left = {props.profilePage.left}/>
-            <Right dispatch = {props.dispatch} right = {props.profilePage.right} addPost={props.addPost} changePostText = {props.changePostText}/>
+            <Right store = {props.store} right = {props.profilePage.right}/>
         </div>
     )}
 export default Profile

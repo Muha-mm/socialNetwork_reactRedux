@@ -1,10 +1,9 @@
-import {dialogsPageReducer} from "./Reducer/dialogsPageReducer";
-import {profilePageReducer} from "./Reducer/profilePageReducer";
+import dialogsPageReducer from "./Reducer/dialogsPageReducer";
+import profilePageReducer from "./Reducer/profilePageReducer";
 
 let store = {
 
     _state: {
-
         dialogsPage: {
             newMessageText: '',
 
@@ -105,7 +104,6 @@ let store = {
                 ]
             }
         }
-
     },
     getState() {
         return (this._state)
@@ -118,11 +116,10 @@ let store = {
 
 
     dispatch(action) {
-        dialogsPageReducer(this._state.dialogsPage, action)
-        profilePageReducer(this._state.profilePage, action)
+        this._state.dialogsPage = dialogsPageReducer(this._state.dialogsPage, action);
+        this._state.profilePage = profilePageReducer(this._state.profilePage, action);
         this._rerenderApp(this._state);
     }
 
 }
-
 export default store;

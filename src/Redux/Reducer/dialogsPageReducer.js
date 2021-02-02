@@ -9,7 +9,36 @@ let liveTime = () =>{
     )
 }
 
-export let dialogsPageReducer = (state, action) =>{
+let initialState = {newMessageText: '',
+
+    D: [
+    {name: 'Patriсk', img: '', id: 1},
+    {name: 'Jane', img: '', id: 2},
+    {name: 'Patricia', img: '', id: 3},
+    {name: 'Anne', img: '', id: 4},
+    {name: 'Rachel', img: '', id: 5},
+    {name: 'Maria', img: '', id: 7},
+    {name: 'One Pelt', img: '', id: 8},
+    {name: 'Teresa', img: '', id: 9},
+    {name: 'Wane', img: '', id: 10},
+    {name: 'Gena', img: '', id: 11},
+    {name: 'John', img: '', id: 12},
+    {name: 'HR', img: '', id: 13},
+    {name: 'Ed', img: '', id: 14},
+    {name: 'Edwood', img: '', id: 15},
+    {name: 'Charles', img: '', id: 16}
+],
+    M: [
+    {
+        message: 'Will you go to walk tomorrowewg  gggggggggg gggggg gggg ggggwegwegweg ew we',
+        time: '11:11',
+        id: ''
+    },
+    {message: 'Will you go to walk tomorrow', time: '11:11', id: ''},
+    {message: 'So, that will meet near city beach, about 10 a.m', time: '11:11', id: ''},
+    {message: 'Heeeey, Ive been standing in front of your door for half an hour', time: '11:11', id: ''}
+]}
+export let dialogsPageReducer = (state=initialState, action) =>{
     switch (action.type){
         case 'SEND_MESSAGE':
             let newMessage = {
@@ -17,7 +46,7 @@ export let dialogsPageReducer = (state, action) =>{
                 id: 4,
                 time: liveTime(),
             }
-            if (state.newMessageText === '') {
+            if (state.newMessageText.trim() === '') {
                 alert('пусто')
             } else {
                 state.M.push(newMessage);
@@ -32,6 +61,7 @@ export let dialogsPageReducer = (state, action) =>{
         default: return state
     }
 }
+export default dialogsPageReducer;
 
 export let sendMessageActionCreator = () =>({type: 'SEND_MESSAGE'})
 export let changeMessageTextActionCreator = (text) =>({

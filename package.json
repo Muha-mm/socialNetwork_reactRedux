@@ -16,6 +16,7 @@
     "react-sticky": "^6.0.3",
     "react-sticky-box": "^0.9.3",
     "react-stickynode": "^3.0.4",
+    "redux": "^4.0.5",
     "sass": "^1.32.4",
     "vanta": "^0.5.21",
     "web-vitals": "^0.2.4"

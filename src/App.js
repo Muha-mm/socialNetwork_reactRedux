@@ -17,14 +17,14 @@ const App = (props) => {
             <Route exact path = {["/Profile", "/"]}
                 render = {() =>
                 <Profile
-                    dispatch = {props.dispatch}
+                    store = {props.store}
                     profilePage = {props.state.profilePage}
                 />}/>
 
             <Route path = '/Dialogs'
                    render = {() =>
                    <Dialogs
-                       dispatch = {props.dispatch.bind()}
+                       store = {props.store}
                        dialogsPage = {props.state.dialogsPage}
                    />}/>
 
