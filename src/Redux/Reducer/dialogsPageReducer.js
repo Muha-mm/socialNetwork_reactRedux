@@ -41,23 +41,26 @@ let initialState = {newMessageText: '',
 export let dialogsPageReducer = (state=initialState, action) =>{
     switch (action.type){
         case 'SEND_MESSAGE':
+            console.log('send')
             let newMessage = {
                 message: state.newMessageText,
                 id: 4,
                 time: liveTime(),
             }
-            if (state.newMessageText.trim() === '') {
-                alert('пусто')
-            } else {
-                state.M.push(newMessage);
-                state.newMessageText = ''
-            }
-            return state
+            if (state.newMessageText.trim() !== '') {
+                return {
+                    ...state,
+                    M: [...state.M, newMessage],
+                    newMessageText: ''
+                }
+            }else{return state}
 
         case 'CHANGE_MESSAGE_TEXT':
-            state.newMessageText = action.text
-            return state
-
+            console.log('change')
+            return{
+                ...state,
+                newMessageText: action.text
+            }
         default: return state
     }
 }

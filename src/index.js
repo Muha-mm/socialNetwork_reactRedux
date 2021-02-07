@@ -5,22 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import store from "./Redux/ReduxStore";
+import {Provider} from "react-redux";
 
 
-export let rerenderApp = (state) => {
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App state={state} store = {store}/>
+            <Provider store = {store}>
+                <App store = {store}/>
+            </Provider>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
-)};
-
-rerenderApp(store.getState());
-store.subscribe(()=>{
-    rerenderApp(store.getState())
-});
+);
 
 
 

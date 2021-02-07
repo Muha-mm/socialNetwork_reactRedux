@@ -3,7 +3,7 @@ import c from './Content.module.css'
 import MessageComp from "./MessageComp/MessageComp";
 
 const Content = (props) =>{
-    let messageElements = props.message
+    let messageElements = props.messages
         .map((m) => <MessageComp message = {m.message} time = {m.time}/>)
 
     return (

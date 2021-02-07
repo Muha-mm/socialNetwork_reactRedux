@@ -7,15 +7,15 @@ const Input = (props) =>{
         <div className={c.d1}>
             <form>
                 <textarea
-                    onKeyDown={props.onHandleKeyDown}
-                    onChange={props.onChangePostText}
+                    onKeyDown={props.handleKeyDown}
+                    onChange={props.changePostText}
                     value={props.newPostText}
                     required
                     placeholder="share something..."
                 />
 
                 <button
-                    onClick={props.onAddPost}
+                    onClick={props.addPost}
                     type="button"
                     className={c.add}>
                     {'>'}

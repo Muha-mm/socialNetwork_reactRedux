@@ -1,3 +1,4 @@
+import {merge} from "lodash";
 let liveTime = () =>{
     let data = new Date();
     let hours  = data.getHours()
@@ -9,8 +10,10 @@ let liveTime = () =>{
     )
 }
 
-let initialState = {specialLink: 'accountLink',
+let initialState = {
+    specialLink: 'accountLink',
     name: 'Leah Riggeti',
+    newPostText: '',
 
     left: {
     ava: 'profilePhotoLink',
@@ -26,7 +29,6 @@ let initialState = {specialLink: 'accountLink',
 
 
 right: {
-    newPostText: '',
         name: 'nameSurname',
         city: 'city',
         birthday: 'date',
@@ -81,30 +83,31 @@ let profilePageReducer = (state = initialState, action) =>{
     switch (action.type){
         case 'ADD_POST':
             let newPost = {
-                message: state.right.newPostText,
+                message: state.newPostText,
                 id: 4,
                 time: liveTime(),
                 like: 7
             }
-            if (state.right.newPostText.trim() === '') {
-                alert('пусто')
-            } else {
-                state.right.postData.push(newPost);
-                state.right.newPostText = ''
-            }
-            return state
+            if (state.newPostText.trim() !== '') {
+                let stateCopy = merge({},state);
+                stateCopy.right.postData.push(newPost);
+                stateCopy.newPostText = '';
+                return stateCopy;
 
-        case 'CHANGE_POST_TEXT':
-            state.right.newPostText = action.text
-            return state
+            }else{return state}
 
+        case 'CHANGE_POST_TEXT': {
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.text;
+            return stateCopy;
+        }
         default: return state
     }
 }
 export default profilePageReducer;
 
 export let addPostActionCreator = () =>({type: 'ADD_POST'});
-export let changePostActionCreator = (text) =>({
+export let changePostTextActionCreator = (text) =>({
     type: 'CHANGE_POST_TEXT',
     text: text
 });
