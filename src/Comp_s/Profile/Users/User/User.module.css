@@ -1,0 +1,92 @@
+.user{
+    background: #212121;
+    box-shadow: 1px 1px 3px #151515, 0 0 3px #151515;
+    font-family: 'Montserrat', serif;
+    margin-left: 68.5px;
+    padding: 2px 6px 6px 8px;
+    display: inline-block;
+    width: 570px;
+    height:94px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.right{
+    float: right;
+    padding: 32px 15px 0 0;
+}
+.location{
+    word-wrap: break-word;
+    width: 180px;
+    margin-top: 8px;
+    margin-right: 20px;
+    float: left;
+    font-size: 13px;
+}
+
+.photo{
+    float: left;
+}
+
+.left{
+    float: left;
+}
+
+.center{
+    padding: 20px 0 0 30px;
+    float: right;
+}
+.name {
+    color: #e2bba8;
+    font-size: 23px;
+}
+.photo{
+    background-color: #c4c4c4;
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 7px;
+}
+
+.photo img{
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.unFollow{
+    background: #aeaeae;
+}
+.follow{
+    background: #e0b294;
+}
+
+.right button{
+    width: 120px;
+    height: 35px;
+    margin-right: 5px;
+    float: right;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    border: none;
+    /*background: #f3eab1;*/
+    outline: none;
+    color: #262626;
+    cursor: pointer;
+    /*border-radius: px;*/
+}
+
+.right button {
+    background-position: center;
+    transition: background 0.5s;
+}
+.right button:hover {
+    border: 1px #3b0b0b double;
+}
+.right button:active {
+    /*background-color: #a2a258;*/
+    background-size: 100%;
+    transition: background 0s;
+}

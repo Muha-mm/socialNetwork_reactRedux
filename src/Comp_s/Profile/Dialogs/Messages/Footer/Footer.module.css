@@ -1,7 +1,5 @@
 .input{
     width: 100%;
-    /*margin-top: 2px;*/
-    /*position: fixed;*/
 }
 
 .footer hr{
@@ -36,7 +34,7 @@
     color: #696969;
 }
 
-.d1 button {
+.add {
     font-family: Broadway, serif;
     position: absolute;
     font-size: 20px;
@@ -52,11 +50,11 @@
     /*border-radius: 0 5px 5px 0;*/
     cursor: pointer;
 }
-.d1 button:before {
+.add:before {
     font-size: 20px;
     color: #3b3b3b;
 }
-.d1 button:active{
+.add:active{
     font-size: 15px;
 }
 

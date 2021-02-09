@@ -1,0 +1,19 @@
+.searchUser{
+    height: 40px;
+    margin-bottom: 6px;
+}
+.search input{
+    box-shadow: #e0b294 0 0.35px 0.3px;
+    text-align: center;
+    padding-left: 7px;
+    font-family:'Montserrat', serif ;
+    width: 711px;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: #1f1f1f;
+    color: #999999;
+    resize: none;
+    position: absolute;
+}

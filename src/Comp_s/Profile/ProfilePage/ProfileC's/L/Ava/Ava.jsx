@@ -6,8 +6,8 @@ const Ava = () =>{
     <div className={c.avatar}>
 
         <div className={c.ava}>
-            <img src="https://i.pinimg.com/originals/b7/cd/b2/b7cdb2dd27fd48cde91f48e25317288f.jpg"
-                 alt="avatarka"/>{/*avatar*/}
+            <img src="https://clck.ru/SvH4y"
+                 alt="avatarka"/>
         </div>
 
         <div className={c.edit}>

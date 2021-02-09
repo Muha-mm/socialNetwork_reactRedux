@@ -1,5 +1,12 @@
 .users{
-    background-color: #2b2b2b;
+    margin-left: 30px;
+    background-color: #292929;
     height: 100%;
     color: #c4c4c4;
+    width: 720px;
+    box-shadow: 1px 1px 3px #151515, 0 0 3px #151515;
+}
+.usersItem{
+    text-align: center;
+    font-size: 25px;
 }

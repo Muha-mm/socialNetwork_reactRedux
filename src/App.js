@@ -4,10 +4,11 @@ import {Route} from 'react-router-dom'
 import Header from "./Comp_s/Header/Header"
 import Nav from "./Comp_s/Nav/Nav"
 import Profile from "./Comp_s/Profile/ProfilePage/Profile"
-import Users from "./Comp_s/Profile/Users/Users";
+// import Users from "./Comp_s/Profile/Users/Users";
 import News from "./Comp_s/Profile/News/News";
 import Settings from "./Comp_s/Profile/Setings/Settings";
 import Dialogs from "./Comp_s/Profile/Dialogs/Dialogs";
+import UsersConteiner from "./Comp_s/Profile/Users/UsersConteiner";
 const App = (props) => {
   return (
     <div className="app">
@@ -22,7 +23,8 @@ const App = (props) => {
                    render = {() =>
                    <Dialogs dialogsPage = {props.store.getState().dialogsPage}/>}/>
 
-            <Route path = '/Users' component={Users}/>
+            <Route path = '/Users'
+                   render={ () => <UsersConteiner /> }/>
             <Route path = '/News' component={News}/>
             <Route path = '/Settings' component={Settings}/>
         </div>

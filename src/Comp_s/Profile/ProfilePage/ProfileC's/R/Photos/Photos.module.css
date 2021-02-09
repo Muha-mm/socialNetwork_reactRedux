@@ -2,8 +2,8 @@
   margin-top: 25px;
   height: 140px;
   border-radius: 7px;
-  box-shadow: 1px 1px 3px #151515, 0px 0px 3px #151515;
-  padding: 10px 12px 6px 0px ;
+  box-shadow: 1px 1px 3px #151515, 0 0 3px #151515;
+  padding: 10px 12px 6px 0 ;
   background: #212121;
   width: 475px;
   grid-area: lp;
