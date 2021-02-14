@@ -4,7 +4,7 @@ import MessageComp from "./MessageComp/MessageComp";
 
 const Content = (props) =>{
     let messageElements = props.messages
-        .map((m) => <MessageComp message = {m.message} time = {m.time}/>)
+        .map((m) => <MessageComp message = {m.message} time = {m.time} id = {m.id} background = {m.background}/>)
 
     return (
         <div className={c.content}>

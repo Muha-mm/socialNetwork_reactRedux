@@ -5,10 +5,10 @@ const SearchUser = (props) =>{
     <div className={c.searchUser}>
         <div className={c.search}>
             <input
-                value={props.newSearchUserText}
+                // value={props.newSearchUserText}
                 onChange={()=>{}}
                 type="text"
-                placeholder={'Enter to find user'}
+                placeholder={`Enter to find user (${props.usersCount})`}
                 autoFocus
             />
         </div>

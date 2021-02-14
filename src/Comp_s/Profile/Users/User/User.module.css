@@ -1,22 +1,23 @@
 .user{
     background: #212121;
     box-shadow: 1px 1px 3px #151515, 0 0 3px #151515;
-    font-family: 'Montserrat', serif;
-    margin-left: 68.5px;
+    margin-left: 82px;
     padding: 2px 6px 6px 8px;
     display: inline-block;
-    width: 570px;
-    height:94px;
-    margin-top: 13px;
-    margin-bottom: 5px;
+    width: 540px;
+    height:89px;
+    margin-top: 9px;
     border-radius: 20px;
+    border-right: 1px #7c5944 solid;
+    border-left: 1px #7c5944 solid;
 }
-
 .right{
     float: right;
     padding: 32px 15px 0 0;
 }
 .location{
+    color: #8d8d8d;
+    font-family: Ebrima, serif;
     word-wrap: break-word;
     width: 180px;
     margin-top: 8px;
@@ -24,69 +25,72 @@
     float: left;
     font-size: 13px;
 }
-
 .photo{
     float: left;
 }
-
 .left{
     float: left;
 }
-
 .center{
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 26px;
     float: right;
 }
 .name {
-    color: #e2bba8;
+    font-family: "Times New Roman", serif;
+    color: #bfb1a7;
     font-size: 23px;
 }
 .photo{
     background-color: #c4c4c4;
-    width: 85px;
-    height: 85px;
+    width: 82px;
+    height: 82px;
     border-radius: 100px;
     float: left;
-    margin-top: 7px;
+    margin-top: 4.5px;
+    border:1px #a96b3c solid;
 }
-
+.photo:hover{
+    filter: invert(90%);
+}
 .photo img{
     border-radius: 100px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .unFollow{
-    background: #aeaeae;
+    color: #b8b8b8;
+    background: #343434;
+    border: 1px #a5a5a5 solid;
+    border-top:0.7px;
+    border-bottom:0.7px;
 }
 .follow{
-    background: #e0b294;
+    background: #2a2a2a;
+    color: #e0b294;
+    border: 0.7px #e0b294 solid;
+    border-top: 1px;
+    border-bottom: 1px;
 }
-
+.follow:active{
+    border: 1px #e0b294 double;
+}
+.unFollow:active{
+    border: 1px #a5a5a5 double;
+}
 .right button{
+    letter-spacing: 0.3px;
+    border-radius: 11px;
+    font-family: "Times New Roman", serif;
     width: 120px;
     height: 35px;
     margin-right: 5px;
     float: right;
-    font-family: "Montserrat", serif;
-    font-size: 20px;
-    border: none;
-    /*background: #f3eab1;*/
+    font-size: 18px;
     outline: none;
-    color: #262626;
     cursor: pointer;
-    /*border-radius: px;*/
 }
-
 .right button {
     background-position: center;
     transition: background 0.5s;
-}
-.right button:hover {
-    border: 1px #3b0b0b double;
-}
-.right button:active {
-    /*background-color: #a2a258;*/
-    background-size: 100%;
-    transition: background 0s;
 }

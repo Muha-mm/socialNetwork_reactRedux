@@ -32,7 +32,7 @@ const Inf = () =>{
 
             <div className={c.fullInf}>
                 <button className={c.fullInfButton}>
-                    подробная информация
+                    more information
                     {/*<img src={icon} className={c.editIcon} alt=""/>*/}
                 </button>
             </div>

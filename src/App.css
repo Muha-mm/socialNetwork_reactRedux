@@ -3,7 +3,7 @@
     top:0;
     bottom:0;
     left:0;
-    right:90px;
+    right:0;
     margin:0 auto;
     display: grid;
     grid-template-areas:
@@ -13,7 +13,7 @@
     grid-template-columns: 18% 1fr;
     grid-gap: 0.6vw;
     height: 635px;
-    width: 950px;
+    width: 1250px;
 }
 
 .app-content{

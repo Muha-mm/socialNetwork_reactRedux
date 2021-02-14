@@ -18,6 +18,8 @@
 }
 
 .time{
+    font-family: "Century Gothic", serif;
+    /*letter-spacing: 0.7px;*/
     font-weight: bold;
     float: right;
     margin: 6px 3px 0 6px;

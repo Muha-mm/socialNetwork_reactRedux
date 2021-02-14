@@ -5,9 +5,9 @@
 
 .header hr{
     margin-top: 1px;
-    height: 1px;
+    height: 0.7px;
     border: none;
-    background: #313131;
+    background: #404040;
 }
 
 .name{

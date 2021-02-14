@@ -1,11 +1,13 @@
 .head{
     grid-area: h;
-    /*background-color: #2b2b2b;*/
-    width: 1100px;
+    background-color: #272727;
+    width: 1230px;
+    height: 39px;
     text-align: center;
+    border-radius: 6px;
+    margin-right: 10px;
 }
 .zag{
-    color: #c4c4c4;
-    /*text-align: center;*/
+    color: #4a4a4a;
     margin-top: 0.7em;
 }

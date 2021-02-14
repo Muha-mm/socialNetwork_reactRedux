@@ -1,7 +1,6 @@
 .dialog{
     grid-area: d;
     background-color: #282828;
-    /*height: 90vh;*/
     height: 583px;
     overflow-y: scroll;
     overflow-x: hidden;

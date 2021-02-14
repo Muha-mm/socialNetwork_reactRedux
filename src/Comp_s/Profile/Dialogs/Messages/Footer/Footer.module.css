@@ -6,7 +6,7 @@
     margin: 0;
     height: 0;
     border: none;
-    border-top: 1px solid #333333;
+    border-top: 1px solid #404040;
 }
 
 
@@ -18,7 +18,7 @@
 .d1 textarea {
     padding: 13px 10px 2px 10px;
     font-family:'Times New Roman', Times, serif ;
-    width: 604px;
+    width: 654px;
     height: 30px;
     border: none;
     font-size: 16px;
@@ -39,7 +39,7 @@
     position: absolute;
     font-size: 20px;
     top: 0;
-    right: -232px;
+    right: -283px;
     width: 45px;
     height: 45px;
     border: none;
@@ -49,6 +49,7 @@
     color: #41c1aa;
     /*border-radius: 0 5px 5px 0;*/
     cursor: pointer;
+    /*border-left: #3c3c3c 1px solid;*/
 }
 .add:before {
     font-size: 20px;

@@ -3,7 +3,7 @@
     text-align: left;
     transition: 0.3s;
     height: 47px;
-    width: 217px;
+    width: 229px;
     padding: 5px 0 4px 8px;
     float: left;
 }
@@ -11,7 +11,7 @@
 .dialogItem hr{
     margin-top: 50px;
     height: 1px;
-    background: #2c2c2c;
+    background: #2d2d2d;
     border: none;
     margin-left: -7px;
 }
@@ -43,7 +43,7 @@
     object-fit: cover;
 }
 .dialogItem:hover{
-    background: #2c2c2c;
+    background: #303030;
 }
 
 .active{

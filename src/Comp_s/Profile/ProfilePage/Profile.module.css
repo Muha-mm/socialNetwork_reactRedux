@@ -8,6 +8,9 @@
     background-color: #2b2b2b;
     height: 100%;
     width: 830px;
+    border: 1px #1d534d dashed;
+    border-radius: 20px 20px 0 0;
+    margin-left: 15px;
 }
 a{
     text-decoration: none;
