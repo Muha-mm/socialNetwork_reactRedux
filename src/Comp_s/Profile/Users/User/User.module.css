@@ -36,7 +36,8 @@
     float: right;
 }
 .name {
-    font-family: "Times New Roman", serif;
+    font-family: Montserrat, serif;
+    font-weight: 300;
     color: #bfb1a7;
     font-size: 23px;
 }
@@ -81,7 +82,8 @@
 .right button{
     letter-spacing: 0.3px;
     border-radius: 11px;
-    font-family: "Times New Roman", serif;
+    font-family: Montserrat, serif;
+    font-weight: 100;
     width: 120px;
     height: 35px;
     margin-right: 5px;

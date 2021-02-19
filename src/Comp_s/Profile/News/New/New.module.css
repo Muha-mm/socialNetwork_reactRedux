@@ -1,0 +1,35 @@
+.new{
+    /*background-color: #2b2b2b;*/
+    color: #c4c4c4;
+    padding: 10px;
+}
+
+.description{
+    font-size: 20px;
+    color: #db685d;
+}
+.url a{
+    margin-left: 10px;
+    color: #db685d;
+}
+.author{
+    margin-left: 10px;
+    color: #eebdbd;
+    font-size: 16px;
+}
+.header{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: ReithSerif, Helvetica, Arial, freesans, sans-serif;
+}
+
+.date{
+    font-size: 16px;
+}
+.url{
+    margin-left: 20px;
+    font-size: 16px;
+}
+.photo{
+    width: 800px;
+}

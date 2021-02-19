@@ -8,7 +8,8 @@ import Profile from "./Comp_s/Profile/ProfilePage/Profile"
 import News from "./Comp_s/Profile/News/News";
 import Settings from "./Comp_s/Profile/Setings/Settings";
 import Dialogs from "./Comp_s/Profile/Dialogs/Dialogs";
-import UsersConteiner from "./Comp_s/Profile/Users/UsersConteiner";
+import Container from "./Comp_s/Profile/Users/UsersContainer";
+import newsPageContainer from "./Comp_s/Profile/News/NewsContainer";
 const App = (props) => {
   return (
     <div className="app">
@@ -24,8 +25,8 @@ const App = (props) => {
                    <Dialogs dialogsPage = {props.store.getState().dialogsPage}/>}/>
 
             <Route path = '/Users'
-                   render={ () => <UsersConteiner /> }/>
-            <Route path = '/News' component={News}/>
+                   render={ () => <Container /> }/>
+            <Route path = '/News' component={newsPageContainer}/>
             <Route path = '/Settings' component={Settings}/>
         </div>
     </div>

@@ -1,16 +1,17 @@
 .message{
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
     color: #c4c4c4;
-    font-size: 14px;
+    font-size: 13px;
     word-wrap: break-word;
     padding: 5px;
     float: left;
     width: 100%;
-    margin-right: 5px;
 }
 
 .messageText{
     box-shadow: 1px 1px 3px #151515, 0 0 2px #151515;
-    padding: 10px 3px 10px 10px;
+    padding: 10px 7px 10px 10px;
     border-radius: 20px;
     background-color: #3b3b3b;
     max-width: 400px;
@@ -22,7 +23,7 @@
     /*letter-spacing: 0.7px;*/
     font-weight: bold;
     float: right;
-    margin: 6px 3px 0 6px;
+    margin: 5px 3px 0 6px;
     font-size: 8px;
     color: #42b59a;
     width: 21px;

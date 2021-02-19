@@ -2,7 +2,8 @@ let initialState = {
     newSearchUserText: '',
     users: [],
     totalCount: 0,
-    currentPage: 2
+    currentPage: 2,
+    isFetching:false
     //         [
     //     {id:1,avatar: 'https://clck.ru/TBMXN', name:'MLV', country:'Russia', city: 'Moscow', isFollow: false, profileLink: 'https://clck.ru/TCQyG'},
     //     {id:2,avatar: 'https://clck.ru/TBMXN', name:'Durov', country:'Russia', city: 'Saint-Petersburg', isFollow: false, profileLink: 'https://telegram.org/'},
@@ -15,7 +16,7 @@ let initialState = {
     // ]
 }
 
-let UsersReducer = (state = initialState, action) => {
+let usersPageReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'FOLLOW':
             console.log('follow' + action.id)
@@ -55,14 +56,20 @@ let UsersReducer = (state = initialState, action) => {
                 ...state,
                 currentPage: action.currentPage
             }
+        case 'TOGGLE_IS_FETCHING':
+            return{
+                ...state,
+                isFetching: action.isFetching
+            }
         default:
             return state
     }
 }
 
-export default UsersReducer
+export default usersPageReducer
 
-export const followAC = (id) => ({type: 'FOLLOW', id});
-export const unFollowAC = (id) => ({type: 'UNFOLLOW', id});
-export const setUsersAC = (users, totalCount) => ({type: 'SET_USERS', users, totalCount});
-export const setCurrentPageAC = (currentPage) =>({type:'SET_CURRENT_PAGE', currentPage})
+export const follow = (id) => ({type: 'FOLLOW', id});
+export const unFollow = (id) => ({type: 'UNFOLLOW', id});
+export const setUsers = (users, totalCount) => ({type: 'SET_USERS', users, totalCount});
+export const setCurrentPage = (currentPage) =>({type:'SET_CURRENT_PAGE', currentPage})
+export const toggleIsFetching = (isFetching)=>({type:'TOGGLE_IS_FETCHING', isFetching})

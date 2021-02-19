@@ -7,7 +7,7 @@ const Header = () =>{
                 Header      Header   header Header    Header     Header
                 Header header   Header    header Header   header
                 Header   header       Header header  Header    Header
-                Header      header   Header  Header    header  Header heade
+                Header      header   Header  Header    header  Header header
             </div>
         </header>
     );

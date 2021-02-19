@@ -2,6 +2,7 @@
     position: relative;
     right: 35px;
     display: grid;
+    margin-top: 2px;
     grid-template-areas:
             'd m';
     grid-template-columns: 1.85fr 6fr;

@@ -3,19 +3,19 @@
 }
 
 .search hr{
-    margin-top: 36px;
-    width: 223px;
+    margin-top: 36.5px;
+    width: 222.5px;
     position: absolute;
     height: 0.7px;
     border: none;
-    background: #404040;
+    background: #343434;
 }
 
 .search input{
     padding: 8px 0 8px 15px;
     font-family:'Times New Roman', Times, serif ;
-    width: 208px;
-    height: 20px;
+    width: 207.5px;
+    height: 21px;
     border: none;
     font-size: 14px;
     outline: none;

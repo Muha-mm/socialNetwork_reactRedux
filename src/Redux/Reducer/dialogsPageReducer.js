@@ -10,14 +10,13 @@ let liveTime = () => {
         liveTime
     )
 }
-
-function getGMapRandomColor() {
-    let colorArray = ['rgb(82,0,35)', 'rgb(0,82,54)',
-        'rgb(60,0,82)', 'rgb(82,0,29)', 'rgb(82,0,48)',
-        'rgb(0,54,82)', "rgb(62,2,35)", "rgb(2,83,72)", "rgb(76,30,1)",
-        "rgb(0,65,44)", "rgb(65,0,28)", "rgb(82,0,29)", "rgb(76,6,34)"]
+let getRandomColor = () => {
+    let colorArray = ['rgb(45,0,22)', 'rgb(0,38,29)', 'rgb(54,3,64)',
+        'rgb(67,2,26)', 'rgb(57,1,36)', 'rgb(0,32,41)',
+        "rgb(44,6,67)", "rgb(0,81,68)", "rgb(4,78,70)",
+        "rgb(5,67,55)", "rgb(62,4,24)", "rgb(4,58,76)",
+        "rgb(0,93,56)"]
     let random = Math.floor(Math.random() * (colorArray.length))
-
     return colorArray[random];
 }
 
@@ -42,12 +41,7 @@ let initialState = {
         {name: 'Charles', img: '', id: 16}
     ],
     M: [
-        {
-            message: 'Will you go to walk tomorrowewg  gggggggggg gggggg gggg ggggwegwegweg ew we',
-            time: '11:11',
-            id: ''
-        },
-        {message: 'Will you go to walk tomorrow', time: '11:11', id: ''}
+        {message: 'Will you go to walk tomorrow', time: '11:11', id: ''},
     ]
 }
 export let dialogsPageReducer = (state = initialState, action) => {
@@ -57,7 +51,7 @@ export let dialogsPageReducer = (state = initialState, action) => {
                 message: state.newMessageText,
                 id: 4,
                 time: liveTime(),
-                background: getGMapRandomColor()
+                background: getRandomColor()
             }
             if (state.newMessageText.trim() !== '') {
                 return {
